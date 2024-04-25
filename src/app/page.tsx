@@ -12,12 +12,10 @@ export default function Home() {
     router.push(`/todoList/${selectedUser?.id}`);
   }
 
-  if(!selectedUser?.id && status === 'succeeded') {
+  if(!selectedUser?.id) {
     return (
       <h1> Pleas login </h1>
     );
-  } else {
-    return <div>Loading...</div>
   }
 
 }

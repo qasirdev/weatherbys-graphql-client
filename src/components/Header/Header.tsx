@@ -23,9 +23,6 @@ export default function Header({ title }: { title: string }) {
     router.push('/login');
   }
 
-  if(!selectedUser?.id && status !== 'succeeded'){
-      return <div>Loading...</div>
-  }
   return (
     <AppBar position="static">
       <Toolbar>
